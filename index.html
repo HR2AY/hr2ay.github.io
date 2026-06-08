@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>黄泽宇 | AI Builder</title>
+    <meta
+      name="description"
+      content="黄泽宇的动态简历主页，聚焦 AI 产品构建、用户研究、注意力价值与项目案例。"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@1&family=Inter:wght@400;500;700;800;900&family=Plus+Jakarta+Sans:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header">
+        <a class="logo" href="#hero" aria-label="回到首页">
+          <span class="logo-mark"></span>
+          <span class="logo-word">HUANG ZEYU</span>
+        </a>
+
+        <nav class="desktop-nav" aria-label="主导航">
+          <a href="#focus-beads">PROJECTS</a>
+          <a href="#attention">BLOG</a>
+          <a href="#journey">ABOUT</a>
+          <a href="./黄泽宇-简历解析.md">RESUME</a>
+        </nav>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          aria-label="打开菜单"
+        >
+          <i data-lucide="menu"></i>
+        </button>
+      </header>
+
+      <div class="mobile-menu" id="mobile-menu" hidden>
+        <div class="mobile-menu-panel">
+          <div class="mobile-menu-top">
+            <span>Navigation</span>
+            <button class="menu-close" type="button" aria-label="关闭菜单">
+              <i data-lucide="x"></i>
+            </button>
+          </div>
+
+          <nav class="mobile-nav" aria-label="移动端导航">
+            <a href="#focus-beads">PROJECTS</a>
+            <a href="#attention">BLOG</a>
+            <a href="#journey">ABOUT</a>
+            <a href="./黄泽宇-简历解析.md">RESUME</a>
+          </nav>
+        </div>
+      </div>
+
+      <aside class="section-rail" aria-label="章节导航">
+        <a class="rail-link active" href="#hero" data-target="hero">01</a>
+        <a class="rail-link" href="#journey" data-target="journey">02</a>
+        <a class="rail-link" href="#growth-analytics" data-target="growth-analytics">03</a>
+        <a class="rail-link" href="#attention" data-target="attention">04</a>
+        <a class="rail-link" href="#focus-beads" data-target="focus-beads">05</a>
+        <a class="rail-link" href="#speak4me" data-target="speak4me">06</a>
+        <a class="rail-link" href="#sufe-calendar" data-target="sufe-calendar">07</a>
+        <a class="rail-link" href="#why-kimi" data-target="why-kimi">08</a>
+      </aside>
+
+      <main>
+        <section class="hero-section" id="hero" data-section>
+          <div class="hero-video-wrap" aria-hidden="true">
+            <video
+              id="hero-video"
+              class="hero-video"
+              autoplay
+              muted
+              loop
+              playsinline
+              src="./hero-video.mp4"
+            ></video>
+
+            <div class="hero-overlay hero-overlay-left"></div>
+            <div class="hero-overlay hero-overlay-bottom"></div>
+
+            <svg class="hero-glow" viewBox="0 0 800 320" fill="none" aria-hidden="true">
+              <defs>
+                <filter id="glow-blur" x="-10%" y="-10%" width="120%" height="120%">
+                  <feGaussianBlur stdDeviation="25" />
+                </filter>
+              </defs>
+              <ellipse
+                cx="400"
+                cy="160"
+                rx="220"
+                ry="72"
+                fill="rgba(246, 247, 250, 0.42)"
+                filter="url(#glow-blur)"
+              ></ellipse>
+            </svg>
+          </div>
+
+          <div class="hero-content">
+            <div class="hero-copy reveal">
+              <p class="eyebrow">Career-Ready Curriculum</p>
+              <h1>
+                HRZAY'S CARRER PATH<span class="accent-dot">.</span>
+              </h1>
+              <p class="hero-description">
+                此页面将会逐步展示我的用户反馈研究、注意力价值思考以及 AI 产品构建经历。
+              </p>
+              <div class="hero-actions">
+                <a class="cta-primary" href="#focus-beads">
+                  <span>Get Started</span>
+                  <i data-lucide="arrow-right"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="hero-lower reveal">
+              <div class="metric-strip">
+                <article>
+                  <strong><span class="counter" data-counter="3">0</span></strong>
+                  <span>AI Native 产品独立开发上线</span>
+                </article>
+                <article>
+                  <strong><span class="counter" data-counter="30">0</span>+</strong>
+                  <span>KOL KOL合作案例</span>
+                </article>
+                <article>
+                  <strong><span class="counter" data-counter="100">0</span>+</strong>
+                  <span>用户反馈语义分析</span>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="content-panel reveal" id="journey" data-section>
+          <div class="panel-heading">
+            <span>Journey</span>
+            <h2>从使用 AI，到理解用户，再到主动构建产品</h2>
+            <p>
+              由创作表达欲肇始，经过增长、数据分析历程，最后汇聚成今天的 Builder 身份。
+            </p>
+          </div>
+
+          <div class="journey-grid">
+            <article class="journey-card">
+              <small>01</small>
+              <h3>AI Creator</h3>
+              <p>长期使用 LLM 做视频、文章、生图等创作，先从表达效率和内容生成理解 AI。</p>
+            </article>
+            <article class="journey-card">
+              <small>02</small>
+              <h3>AI Growth</h3>
+              <p>在 NewsBang 增长实习，从用户反馈渠道、KOL 合作和用户分析理解产品增长。</p>
+            </article>
+            <article class="journey-card">
+              <small>03</small>
+              <h3>Data Analyst</h3>
+              <p>学校数据挖掘与浙商证券实习经历，让我学会用结构化数据支持判断、报告和观点形成。</p>
+            </article>
+            <article class="journey-card">
+              <small>04</small>
+              <h3>Builder</h3>
+              <p>现在的我，更关心如何把观察转成产品，把产品组织成用户愿意持续返回的体验。</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="content-panel reveal" id="attention" data-section>
+        <section class="content-panel reveal growth-panel" id="growth-analytics" data-section>
+          <div class="growth-shell">
+            <div class="growth-copy">
+              <div class="panel-heading compact-heading">
+                <span>Data & Growth</span>
+                <h2>我的数据分析与用户增长经验，来自真实冷启动环境</h2>
+                <p>
+                  这段经历发生在产品仍处于内测阶段，彼时连安卓安装包都还不完整。这是一次关于冷启动、用户洞察和增长执行的旅程。
+                </p>
+              </div>
+
+              <div class="growth-highlights">
+                <article class="growth-stat">
+                  <strong>6 个月</strong>
+                  <span>实习时长</span>
+                </article>
+                <article class="growth-stat">
+                  <strong>300+</strong>
+                  <span>KOL 触达账户</span>
+                </article>
+                <article class="growth-stat">
+                  <strong>65</strong>
+                  <span>合作意向回复</span>
+                </article>
+                <article class="growth-stat">
+                  <strong>#2</strong>
+                  <span>Product Hunt 日榜</span>
+                </article>
+              </div>
+
+              <div class="growth-list">
+                <article class="growth-card">
+                  <h3>KOL 匹配与冷启动触达</h3>
+                  <p>2 个月内向 300+ 账户发送合作信息，其中 65 个账号有回复并愿意继续合作商讨。</p>
+                </article>
+                <article class="growth-card">
+                  <h3>Product Hunt 打榜执行</h3>
+                  <p>在星期二当天联动 KOL、Telegram 群、Discord 和预约用户 DM 进行推广，最终拿到日榜榜二。</p>
+                </article>
+                <article class="growth-card">
+                  <h3>推广物料协作制作</h3>
+                  <p>使用 Figma + Canvas 协作完成 promo video、poster 以及 X meme post 制作。</p>
+                </article>
+                <article class="growth-card">
+                  <h3>核心用户维护与访谈</h3>
+                  <p>持续运营 Discord + Telegram 社群，交接时总人数 200+；并完成 3 位核心用户的深度访谈。</p>
+                </article>
+                <article class="growth-card wide-growth-card">
+                  <h3>用户行为数据分析</h3>
+                  <p>
+                    从十余个埋点获取全球用户行为数据，拆解停留时长、功能偏好、地理位置分布与活跃时间，再把结果反馈给产品团队并用于调整推广策略。
+                  </p>
+                </article>
+              </div>
+            </div>
+
+            <div class="growth-visual">
+              <div class="growth-image-frame">
+                <img src="./newsbang-growth.jpg" alt="NewsBang 实习相关工作场景图片" />
+              </div>
+              <div class="growth-caption">
+                <strong>NewsBang · AI Growth Internship</strong>
+                <p>从社群运营、KOL 拓展、打榜执行到埋点分析，我第一次系统地理解了增长不只是推广，而是持续理解用户并校正产品。</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="content-panel reveal" id="attention" data-section>
+          <div class="panel-heading compact-heading">
+            <span>Attention Revolution</span>
+            <h2>我反复观察到三件事</h2>
+            <p>
+              在做 AI 产品、读用户反馈、看交互行为的过程中，我越来越在意注意力如何被获取、维持与转化。
+            </p>
+          </div>
+
+          <div class="observation-grid">
+            <article class="observation-card">
+              <small>现象 1</small>
+              <h3>信息噪点越来越多</h3>
+              <p>获取、整理、重组信息的成本，被模型迅速压低。</p>
+            </article>
+            <article class="observation-card">
+              <small>现象 2</small>
+              <h3>生成越来越容易</h3>
+              <p>文本、图像、原型和界面都更容易被生成，表达门槛持续下降。</p>
+            </article>
+            <article class="observation-card">
+              <small>现象 3</small>
+              <h3>注意力越来越稀缺</h3>
+              <p>用户真正愿意停留、表达、反复返回的时间，反而更难获得。</p>
+            </article>
+            <article class="observation-card observation-thesis">
+              <small>因此</small>
+              <h3>我开始研究注意力如何转化为价值</h3>
+              <p>我关心的不是 AI 能生成什么，而是 AI 如何优化用户注意力，并把注意力变成真实价值。</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="content-panel project-panel reveal" id="focus-beads" data-section>
+          <div class="project-shell">
+            <div class="project-intro">
+              <span>Project 01</span>
+              <h2>FocusAI 拼豆工作台</h2>
+              <p>
+                一个把专注反馈、3D 拼豆设计和游戏化机制结合起来的 WebGL 产品。
+              </p>
+              <div class="tag-row">
+                <span>Focus_beads</span>
+                <span>React</span>
+                <span>Three.js</span>
+                <span>WebGL</span>
+                <span>Tailwind CSS</span>
+              </div>
+
+              <div class="gif-slot">
+                <div class="gif-slot-media beads-preview">
+                  <img src="./beads.gif" alt="FocusAI 拼豆工作台演示 GIF" />
+                </div>
+                <div class="gif-slot-copy">
+                  <strong>Product Demo</strong>
+                  <p>拼豆预览、专注推进和熨烫效果演示。</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-grid">
+              <article class="case-card">
+              <h3>Problem</h3>
+              <p>传统专注工具通常只给出倒计时、分数或状态反馈，缺少可感知、可沉浸的过程性体验。</p>
+              </article>
+              <article class="case-card">
+              <h3>Insight</h3>
+              <p>如果把专注转译成一个可以被看见、可分享的过程，专注本身也能搭建一个艺术品。</p>
+              </article>
+              <article class="case-card wide-card">
+              <h3>Build</h3>
+              <ul>
+                <li>用 React + Three.js / WebGL 构建 3D 拼豆设计和预览工具</li>
+                <li>建立 221 色标准拼豆颜色映射，完成自动配色匹配</li>
+                <li>设计真实豆板、圆柱插销、空心珠到熨烫后几何体的转换</li>
+                <li>接入 FocusAI API，每 2 秒轮询专注状态驱动进度</li>
+                <li>用 useReducer 状态机组织 IDLE 到 COMPLETED 的完整流程</li>
+              </ul>
+              </article>
+              <article class="case-card">
+              <h3>Result</h3>
+              <p>完成了一个把专注反馈转化为可视化构建体验的 AI Native 交互原型。</p>
+              </article>
+              <article class="case-card">
+              <h3>Reflection</h3>
+              <p>用户坚持一个行为，很多时候依赖的不是提醒，而是是否能感受到自己正在完成某件事。</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="content-panel project-panel reveal" id="speak4me" data-section>
+          <div class="project-shell">
+            <div class="project-intro">
+              <span>Project 02</span>
+              <h2>Speak 4 Me</h2>
+              <p>把“读一封信”重构成可交互、逐层披露的 AI 阅读体验。</p>
+              <div class="tag-row">
+                <span>Next.js</span>
+                <span>SQLite</span>
+                <span>LangChain</span>
+                <span>AI Reading</span>
+              </div>
+
+              <div class="gif-slot">
+                <div class="gif-slot-media letter-preview">
+                  <img src="./speak4me.gif" alt="Speak 4 Me 演示 GIF" />
+                </div>
+                <div class="gif-slot-copy">
+                  <strong>Product Demo</strong>
+                  <p>对话阅读、逐层 reveal 和 peek 交互演示。</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-grid">
+              <article class="case-card">
+              <h3>Problem</h3>
+              <p>传统信件阅读通常一次性展开，信息密度高、情绪压力大，收信人缺少缓冲和引导。</p>
+              </article>
+              <article class="case-card">
+              <h3>Insight</h3>
+              <p>很多重要表达不适合被一次性读完，更适合在对话中被理解、被揭示、被消化。</p>
+              </article>
+              <article class="case-card wide-card">
+              <h3>Build</h3>
+              <ul>
+                <li>使用 Next.js、SQLite、LangChain 组件构建产品</li>
+                <li>发信人上传信件并完成内容解析</li>
+                <li>收信人通过信件码进入会话式阅读空间</li>
+                <li>支持对话、逐段 reveal、peek 式揭示原文</li>
+                <li>把静态文档阅读改造成边聊边读的节奏体验</li>
+              </ul>
+              </article>
+              <article class="case-card">
+              <h3>Result</h3>
+              <p>这个项目把静态文档阅读改造成了带节奏感的交互体验，也验证了 AI 作为转述者可以成为新的内容消费方式。</p>
+              </article>
+              <article class="case-card">
+              <h3>Reflection</h3>
+              <p>用户并不总需要更快拿到全部信息，很多时候更需要被更好地引导进入信息。</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="content-panel project-panel reveal" id="sufe-calendar" data-section>
+          <div class="project-shell">
+            <div class="project-intro">
+              <span>Project 03</span>
+              <h2>SUFE Calendar</h2>
+              <p>从 syllabus 出发，把课程要求转译为每日任务的学习 Agent。</p>
+              <div class="tag-row">
+                <span>SQLite</span>
+                <span>Node.js</span>
+                <span>Agent Workflow</span>
+                <span>Task Planning</span>
+              </div>
+
+              <div class="gif-slot">
+                <div class="gif-slot-media calendar-preview">
+                  <img src="./course.gif" alt="SUFE Calendar 演示 GIF" />
+                </div>
+                <div class="gif-slot-copy">
+                  <strong>Product Demo</strong>
+                  <p>syllabus 解析、任务生成和日历排程演示。</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-grid">
+              <article class="case-card">
+              <h3>Problem</h3>
+              <p>学生面对 syllabus、作业、考试和复习任务时，知道规则，但很难把长期要求真正转成日常执行。</p>
+              </article>
+              <article class="case-card">
+              <h3>Insight</h3>
+              <p>学习管理的问题常常不是信息缺失，而是结构存在但不可操作。</p>
+              </article>
+              <article class="case-card wide-card">
+              <h3>Build</h3>
+              <ul>
+                <li>使用 SQLite + Node.js 框架搭建产品</li>
+                <li>内置对话与日历安排 Agent</li>
+                <li>解析课程 syllabus 并结合对话生成每日任务</li>
+                <li>支持多种任务管理方式</li>
+                <li>覆盖文件解析、学期规划、每日对话、复习管理的完整链路</li>
+              </ul>
+              </article>
+              <article class="case-card">
+              <h3>Result</h3>
+              <p>这个项目证明了 AI 可以把抽象课程要求转成可执行的日程系统。</p>
+              </article>
+              <article class="case-card">
+              <h3>Reflection</h3>
+              <p>好的 Agent 不只是回答问题，而是持续维护用户的时间结构和行动秩序。</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="content-panel why-panel reveal" id="why-kimi" data-section>
+          <div class="panel-heading compact-heading">
+            <span>Why Kimi</span>
+            <h2>Why I'm Interested in AI Growth</h2>
+            <p>
+              我对 AI 的兴趣，不停留在模型能力本身，而在于产品、表达、用户心智与长期使用价值的交叉位置。
+            </p>
+          </div>
+
+          <div class="why-grid">
+            <article class="why-card">
+              <h3>为什么做 AI 产品</h3>
+              <p>因为我想把模型能力变成真正可被使用、可被感知、可被反复返回的体验。</p>
+            </article>
+            <article class="why-card">
+              <h3>为什么研究注意力</h3>
+              <p>因为信息和创造变便宜后，真正稀缺的已经不是内容，而是用户本身的意愿能否稳定地输出。</p>
+            </article>
+            <article class="why-card">
+              <h3>为什么关注用户表达</h3>
+              <p>从用户反馈分析到信件阅读体验，我越来越相信用户表达本身就是AI时代最珍贵的数据。</p>
+            </article>
+            <article class="why-card">
+              <h3>为什么关注 Agent</h3>
+              <p>因为 Agent 不是简单回答问题，而是能够维护上下文、组织行动，保持用户的核心注意力。</p>
+            </article>
+          </div>
+
+          <div class="closing-card">
+            <p>我希望参与构建能够长期占据用户注意力、创造真实价值的 AI 产品。</p>
+          </div>
+
+          <footer class="footer-links">
+            <a href="mailto:hzy20050204@gmail.com">hzy20050204@gmail.com</a>
+            <a href="https://github.com/HR2AY" target="_blank" rel="noreferrer">github.com/HR2AY</a>
+            <span>上海财经大学 · 投资学本科</span>
+          </footer>
+        </section>
+      </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@1.5.17/dist/hls.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lucide@0.511.0/dist/umd/lucide.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
